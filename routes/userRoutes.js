@@ -19,7 +19,6 @@ router.post("/logout", userController.logoutUser);
 // Account management
 router.put("/change-password", userController.changePassword);
 router.put("/update-profile", userController.updateProfile);
-router.delete("/delete-account", userController.deleteAccount);
 
 // Role management
 router.put("/make-admin/:id", userController.makeAdmin);
@@ -39,5 +38,8 @@ router.post("/resend-verification", userController.resendVerification);
 
 // Profile picture
 router.post("/upload-profile-picture", userController.uploadProfilePicture);
+
+// Delete Account
+router.delete("/delete-account", userController.deleteAccount);
 
 module.exports = router;
